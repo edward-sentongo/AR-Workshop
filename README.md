@@ -1,35 +1,12 @@
-# AR-Workshop:  Part 2
+# AR-Workshop:  Part 3
 
-1. Theory:
-    Node:
-    Transformable Nodes:
-    3d objects: OBJ, SFX, SFB etc
-    Model:
-    Model Renderable:
-    Pose:
-    Anchor:
+1. Motion:
+    Vector 3
+    Quentirion
 
-2. Import objects
-    @Project:
-        app -> sampledata -> models
-        main -> assets 
-                sfb, sfa
+2. Collision
 
-    @Poly: https://poly.google.com/
-    "cow", unzip obj, mtl and png to sampledata -> models.
-
-
-
-    Sources of 3d models: 
-    - https://poly.google.com/ [100% commercial and guaranteed compartibility]
-    - https://clara.io/scenes
-    - https://www.yobi3d.com/
-    - https://pinshape.com/
-    - https://free3d.com/
-
-3. Manipulate object characteristics:
-    SFB - Materials[metallic, roughness, opacity, baseColorTint]
-    SFB - Models [scale]
+3. Multiple Objects
 
 
 Run it on your phone or simulator and scene the scene being created automatically for you
