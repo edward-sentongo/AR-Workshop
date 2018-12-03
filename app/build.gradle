@@ -37,3 +37,9 @@ dependencies {
 }
 
 apply plugin: 'com.google.ar.sceneform.plugin'
+
+
+sceneform.asset('sampledata/models/Cow.obj',
+        'default',
+        'sampledata/models/Cow.sfa',
+        'src/main/assets/Cow')
