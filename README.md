@@ -1,7 +1,6 @@
 # AR-Workshop:  Part 3
 
-1. Transformable node.
-=> now u can zoom it in and out
+1. Transformable node: scale and move anywhere
 
 2. 
     a) Apart Class of transformable node.
@@ -10,7 +9,7 @@
     c)  Quaternion & angular motion
 
 
-3. Collision
+3. Use Edward's app to create any kind of animation you wish
 
 
 Run it on your phone or simulator and scene the scene being created automatically for you
