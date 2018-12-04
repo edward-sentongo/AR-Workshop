@@ -13,6 +13,7 @@ import com.google.ar.core.HitResult;
 import com.google.ar.core.Plane;
 import com.google.ar.core.Trackable;
 import com.google.ar.sceneform.AnchorNode;
+import com.google.ar.sceneform.HitTestResult;
 import com.google.ar.sceneform.Node;
 import com.google.ar.sceneform.rendering.ModelRenderable;
 import com.google.ar.sceneform.rendering.Renderable;
@@ -90,9 +91,15 @@ public class MainActivity extends AppCompatActivity {
     private void addNodeToScene(ArFragment fragment, Anchor anchor, Renderable renderable) {
         AnchorNode anchorNode = new AnchorNode(anchor);
         //Now we have a transformable node
-        TransformableNode animalNode = new TransformableNode(fragment.getTransformationSystem());
-        animalNode.setRenderable(renderable);
-        animalNode.setParent(anchorNode);
+        Animal animal = new Animal(fragment.getTransformationSystem());
+        animal.setRenderable(renderable);
+        animal.setParent(anchorNode);
+        animal.setOnTapListener(new Node.OnTapListener() {
+            @Override
+            public void onTap(HitTestResult hitTestResult, MotionEvent motionEvent) {
+                animal.startWalkingAnimation();
+            }
+        });
         fragment.getArSceneView().getScene().addChild(anchorNode);
     }
 }

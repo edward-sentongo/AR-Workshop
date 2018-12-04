@@ -1,14 +1,16 @@
 # AR-Workshop:  Part 3
 
-0. Transformable node
+1. Transformable node.
+=> now u can zoom it in and out
 
-1. Motion:
-    Vector 3
-    Quentirion
+2. 
+    a) Apart Class of transformable node.
+        we'd like to play with it later
+    b)  Vector 3 & linear motion
+    c)  Quaternion & angular motion
 
-2. Collision
 
-3. Multiple Objects
+3. Collision
 
 
 Run it on your phone or simulator and scene the scene being created automatically for you
