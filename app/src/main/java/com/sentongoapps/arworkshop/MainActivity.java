@@ -97,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
         animal.setOnTapListener(new Node.OnTapListener() {
             @Override
             public void onTap(HitTestResult hitTestResult, MotionEvent motionEvent) {
-                animal.startWalkingAnimation();
+                //animal.startWalkingAnimation();
+                animal.startRotationAnimation();
             }
         });
         fragment.getArSceneView().getScene().addChild(anchorNode);

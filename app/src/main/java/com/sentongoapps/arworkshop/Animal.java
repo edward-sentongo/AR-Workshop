@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 import android.view.animation.LinearInterpolator;
 
 import com.google.ar.sceneform.FrameTime;
+import com.google.ar.sceneform.math.Quaternion;
+import com.google.ar.sceneform.math.QuaternionEvaluator;
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.math.Vector3Evaluator;
 import com.google.ar.sceneform.ux.TransformableNode;
@@ -15,6 +17,9 @@ public class Animal extends TransformableNode {
 
     @Nullable
     private ObjectAnimator walkingAnimation = null;
+
+    @Nullable
+    private ObjectAnimator rotationAnimation = null;
 
     public Animal(TransformationSystem transformationSystem) {
         super(transformationSystem);
@@ -46,6 +51,9 @@ public class Animal extends TransformableNode {
     }
 
 
+    /*****
+     * WALKING
+     * ******/
     public void startWalkingAnimation() {
         if (walkingAnimation != null) {
             return;
@@ -99,6 +107,55 @@ public class Animal extends TransformableNode {
         linearAnimation.setAutoCancel(true);
 
         return linearAnimation;
+    }
+
+
+    /******
+     * ROTATION
+     * ******/
+    public void startRotationAnimation() {
+        if (rotationAnimation != null) {
+            return;
+        }
+        rotationAnimation = createRotationAnimator();
+        rotationAnimation.setTarget(this);
+        rotationAnimation.setDuration(getAnimationDuration());
+        rotationAnimation.start();
+    }
+
+    public void stopRotationAnimation() {
+        if (rotationAnimation== null) {
+            return;
+        }
+        rotationAnimation.cancel();
+        rotationAnimation = null;
+    }
+
+    /** Returns an ObjectAnimator that makes this node rotate. */
+    private static ObjectAnimator createRotationAnimator() {
+        // Node's setLocalRotation method accepts Quaternions as parameters.
+        // First, set up orientations that will animate a circle.
+        Quaternion orientation1 = Quaternion.axisAngle(new Vector3(0.0f, 1.0f, 0.0f), 0);
+        Quaternion orientation2 = Quaternion.axisAngle(new Vector3(0.0f, 1.0f, 0.0f), 120);
+        Quaternion orientation3 = Quaternion.axisAngle(new Vector3(0.0f, 1.0f, 0.0f), 240);
+        Quaternion orientation4 = Quaternion.axisAngle(new Vector3(0.0f, 1.0f, 0.0f), 360);
+
+        ObjectAnimator orbitAnimation = new ObjectAnimator();
+        orbitAnimation.setObjectValues(orientation1, orientation2, orientation3, orientation4);
+
+        // Next, give it the localRotation property.
+        orbitAnimation.setPropertyName("localRotation");
+
+        // Use Sceneform's QuaternionEvaluator.
+        orbitAnimation.setEvaluator(new QuaternionEvaluator());
+
+        //  Allow orbitAnimation to repeat forever
+        orbitAnimation.setRepeatCount(ObjectAnimator.INFINITE);
+        orbitAnimation.setRepeatMode(ObjectAnimator.RESTART);
+        orbitAnimation.setInterpolator(new LinearInterpolator());
+        orbitAnimation.setAutoCancel(true);
+
+        return orbitAnimation;
     }
 }
 
