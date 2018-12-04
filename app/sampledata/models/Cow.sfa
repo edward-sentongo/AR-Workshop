@@ -37,7 +37,7 @@
     file: 'sampledata/models/Cow.obj',
     name: 'Cow',
     recenter: 'root',
-    scale: 0.29736000000000001,
+    scale: 0.09,
   },
   samplers: [
     {

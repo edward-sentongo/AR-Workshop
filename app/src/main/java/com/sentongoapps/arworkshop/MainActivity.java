@@ -18,6 +18,7 @@ import com.google.ar.sceneform.rendering.ModelRenderable;
 import com.google.ar.sceneform.rendering.Renderable;
 import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.BaseArFragment;
+import com.google.ar.sceneform.ux.TransformableNode;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -88,7 +89,8 @@ public class MainActivity extends AppCompatActivity {
     //3. Now add it to AR Fragment
     private void addNodeToScene(ArFragment fragment, Anchor anchor, Renderable renderable) {
         AnchorNode anchorNode = new AnchorNode(anchor);
-        Node animalNode = new Node();
+        //Now we have a transformable node
+        TransformableNode animalNode = new TransformableNode(fragment.getTransformationSystem());
         animalNode.setRenderable(renderable);
         animalNode.setParent(anchorNode);
         fragment.getArSceneView().getScene().addChild(anchorNode);
