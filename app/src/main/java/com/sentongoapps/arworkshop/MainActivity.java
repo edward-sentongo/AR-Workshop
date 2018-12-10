@@ -49,6 +49,13 @@ public class MainActivity extends AppCompatActivity implements Scene.OnUpdateLis
                 addObject(Uri.parse("Cow.sfb"));
             }
         });
+
+        fragment.getArSceneView().getScene().setOnUpdateListener(new Scene.OnUpdateListener() {
+            @Override
+            public void onUpdate(FrameTime frameTime) {
+
+            }
+        });
     }
 
     //Get center of fragment. This center is center_of_wherever_ur_pointing
