@@ -11,7 +11,7 @@ Part 3: https://github.com/edward-sentongo/AR-Workshop/tree/play/part-3
 
 Part 4: 
 
-The complete app: 
+The complete app (Part 1 - 3): 
 
 
 
