@@ -3,15 +3,15 @@ Beginners guide to Google's ARCore. Or let's just say Sceneform because it makes
 
 Check out the branches and build on them or just go to the final app and make a pull request incase you have new features.
 
-Part 1: https://github.com/edward-sentongo/AR-Workshop/tree/play/part-1
+[Part 1](https://github.com/edward-sentongo/AR-Workshop/tree/play/part-1)
 
-Part 2: https://github.com/edward-sentongo/AR-Workshop/tree/play/part-2
+[Part 2](https://github.com/edward-sentongo/AR-Workshop/tree/play/part-2)
 
-Part 3: https://github.com/edward-sentongo/AR-Workshop/tree/play/part-3
+[Part 3](https://github.com/edward-sentongo/AR-Workshop/tree/play/part-3)
 
-Part 4: 
+[Part 4](https://example.com) 
 
-The complete app (Part 1 - 3): 
+[The complete app (Part 1 - 3)](https://example.com) 
 
 
 
