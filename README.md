@@ -5,9 +5,9 @@ Check out the branches and build on them or just go to the final app and make a 
 
 Part 1: https://github.com/edward-sentongo/AR-Workshop/tree/play/part-1
 
-Part 2: 
+Part 2: https://github.com/edward-sentongo/AR-Workshop/tree/play/part-2
 
-Part 3: 
+Part 3: https://github.com/edward-sentongo/AR-Workshop/tree/play/part-3
 
 Part 4: 
 
