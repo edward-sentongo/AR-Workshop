@@ -21,35 +21,41 @@ You can also load images for augumented images in your virtual world
 
 
 ### 3D objects in our app.
-1. Theory:
-    Node:
-    Transformable Nodes:
-    3d objects: OBJ, SFX, SFB etc
-    Model:
-    Model Renderable:
-    Pose:
-    Anchor:
+**Scene**: things you're adding to the world, 3d models. This is what u define 
+**View**: where your scene will be drawn
+**Node** A Node represents a transformation within the scene graph's hierarchy. It can contain a renderable for the rendering engine to render. 
+Each node can have an arbitrary number of child nodes and one parent. The parent may be another node, or the scene.
+You can add touchlisteners to nodes and these events are propagated through the scene graph like android view hierachy.
+a Node can contain 3d models or simple android view like textView
 
-2. Import objects
+=> What is a transformable node?
+
+**Anchor** Describes a fixed location and orientation in the real world. To stay at a fixed location in physical space, the numerical description of this position will update as ARCore's understanding of the space improves.
+
+**Supported 3d model files**
+- obj
+- fbx
+- glTF
+
+**Sources of 3d model files:**
+- [Poly](https://poly.google.com/)
+- [Clara](https://clara.io/scenes)
+- [Yobi](https://www.yobi3d.com/)
+- [PinShape](https://pinshape.com/)
+- [Free3D](https://free3d.com/)
+- Use your talent
+
+
+**Import objects**
     @Project:
-        app -> sampledata -> models
-        main -> assets 
-                sfb, sfa
-
+        app -> sampledata -> models|sfa|obj|mtl|png. All these are needed for rendering your asset
+        main -> assets/sfb
     @Poly: https://poly.google.com/
     "cow", unzip obj, mtl and png to sampledata -> models.
-
-
-    Performance over rendering. Thus if your assets has many polygons and the engine wants to keep an optimum frame rate, render quality will be low.
+    Performance over rendering. That's why Poly is ideal. Otherwise you'll get low quality anyway
     
-    Sources of 3d models: 
-    - https://poly.google.com/ [100% commercial and guaranteed compartibility]
-    - https://clara.io/scenes
-    - https://www.yobi3d.com/
-    - https://pinshape.com/
-    - https://free3d.com/
 
-3. Manipulate object characteristics:
+**Manipulate object characteristics:**
     SFB - Materials[metallic, roughness, opacity, baseColorTint]
     SFB - Models [scale]
 
