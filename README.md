@@ -47,7 +47,7 @@ a Node can contain 3d models or simple android view like textView
 
 
 **Import objects**
-1.Project:
+1. Project:
 - app -> sampledata -> models|sfa|obj|mtl|png. All these are needed for rendering your asset
 - main -> assets/sfb
 2. Only [Poly](https://poly.google.com/)
