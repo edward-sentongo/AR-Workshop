@@ -7,7 +7,9 @@ You previous had a node, we'd like to make it transformable in order to scale it
 - Vector 3: a 3d location 
 - Quaternion: a Vector 3 + angular motion.
 
-2. Add taplisteners to the object and scene
+2. Let's try the linear motion animator: Vector3Evaluator()
+
+3. Let's use the angular motion animator: QuaternionEvaluator()
 
 3. Play around the code and see what else you can make your object to do.
 
