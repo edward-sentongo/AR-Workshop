@@ -1,5 +1,26 @@
 # AR-Workshop:  Part 2
 
+In this session we'll set up an Emulator for AR as well as add our first 3D model to our AR app.
+
+### AR Emulator
+1. Android Studio 3.1 +
+2. Android Oreo: API 27 (x86) (with Google PlayStore services)
+3. Verify Configuration -> Show Advanced Settings -> Camera Back == VirtualScene.
+4. Camera: "VirtualScene"
+5. Emulator -> Settings -> Advanced -> Renderer maximum (upto OpenGL ES 3.1)
+6. Download "ARCore_*_x86_for_emulator.apk" from [here](https://github.com/google-ar/arcore-android-sdk/releases)
+7. Drag & drop it on the emulator for it to install
+
+**Controls:**
+- Mouse click on screan
+- Option/Alt + WASQED
+- Just experiment around :) We'll load our first app into an emulator.
+
+You can also load images for augumented images in your virtual world
+[Emulator instructions](https://developers.google.com/ar/develop/java/emulator)
+
+
+### 3D objects in our app.
 1. Theory:
     Node:
     Transformable Nodes:
