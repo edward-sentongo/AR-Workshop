@@ -14,7 +14,7 @@
 
 Run it on your phone or simulator and scene the scene being created automatically for you.
 
-Extra, go to [Edward's fun project](https://example.com), clone it and modify it the way you wish.
+Extra, go to [Edward's fun project](https://github.com/edward-sentongo/AR-Workshop-123), clone it and modify it the way you wish.
 
 
 
