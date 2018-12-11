@@ -13,7 +13,17 @@ In this session we'll set up Android Studio and get it ready for our first AR ap
   	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
 
-	<meta-data android:name="com.google.ar.core" android:value="required" />
+	<application
+		....
+		....>
+
+		<meta-data android:name="com.google.ar.core" android:value="required" />
+		<activity android:name=".MainActivity">
+			....
+        		....
+		<activity/>
+
+        <application/>
 ```
 
 5. Modify 'project build.gradle' to include:
