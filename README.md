@@ -56,8 +56,8 @@ a Node can contain 3d models or simple android view like textView
     
 
 **Manipulate object characteristics:**
-    SFB - Materials[metallic, roughness, opacity, baseColorTint]
-    SFB - Models [scale]
+- SFB - Materials[metallic, roughness, opacity, baseColorTint]
+- SFB - Models [scale]
 
 
 Run it on your phone or simulator and scene the scene being created automatically for you
