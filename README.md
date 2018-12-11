@@ -50,7 +50,7 @@ a Node can contain 3d models or simple android view like textView
 1. Project:
 - app -> sampledata -> models|sfa|obj|mtl|png. All these are needed for rendering your asset
 - main -> assets/sfb
-2. Only [Poly](https://poly.google.com/)
+2. Go to [Poly](https://poly.google.com/)
 - "cow", 
 - unzip obj, mtl and png to "sampledata -> models".
 !Performance over rendering. That's why Poly is ideal. Otherwise you'll get low quality anyway!
