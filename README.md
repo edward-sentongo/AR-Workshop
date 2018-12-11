@@ -19,7 +19,8 @@
     "cow", unzip obj, mtl and png to sampledata -> models.
 
 
-
+    Performance over rendering. Thus if your assets has many polygons and the engine wants to keep an optimum frame rate, render quality will be low.
+    
     Sources of 3d models: 
     - https://poly.google.com/ [100% commercial and guaranteed compartibility]
     - https://clara.io/scenes
