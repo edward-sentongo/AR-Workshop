@@ -18,7 +18,7 @@ Check out the branches and build on them or just go to the final app and make a 
 
 [Part 3](https://github.com/edward-sentongo/AR-Workshop/tree/play/part-3)
 
-[Part 4](https://example.com) 
+[Part 4](https://github.com/edward-sentongo/AR-Workshop-Augumented-Images) 
 
 [The complete app (Part 1 - 3)](https://github.com/edward-sentongo/AR-Workshop-123) 
 
