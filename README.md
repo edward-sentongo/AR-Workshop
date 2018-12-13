@@ -12,7 +12,7 @@ In this session we'll set up Android Studio and get it ready for our first AR ap
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sentongoapps.ar_workshop_augumented_images">
+    package="YOUR-APP-ID">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera.ar" 
@@ -43,7 +43,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.sentongoapps.ar_workshop_augumented_images"
+        applicationId "YOUR-APP-ID"
         minSdkVersion 27
         targetSdkVersion 28
         versionCode 1
