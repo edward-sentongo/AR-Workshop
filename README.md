@@ -21,12 +21,12 @@ You can also load images for augumented images in your virtual world
 
 
 ### 3D objects in our app.
-**Scene**: things you're adding to the world, 3d models. This is what u define 
-**View**: where your scene will be drawn
-**Node** A Node represents a transformation within the scene graph's hierarchy. It can contain a renderable for the rendering engine to render. 
+**Scene**: things you're adding to the world, 3d models. This is what u define<br/> 
+**View**: where your scene will be drawn<br/>
+**Node** A Node represents a transformation within the scene graph's hierarchy. It can contain a renderable for the rendering engine to render.<br/>  
 Each node can have an arbitrary number of child nodes and one parent. The parent may be another node, or the scene.
 You can add touchlisteners to nodes and these events are propagated through the scene graph like android view hierachy.
-a Node can contain 3d models or simple android view like textView
+a Node can contain 3d models or simple android view like textView<br/>
 
 => What is a transformable node?
 
