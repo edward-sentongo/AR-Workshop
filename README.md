@@ -56,7 +56,5 @@ In this session we'll set up Android Studio and get it ready for our first AR ap
           android:layout_width="match_parent"
           android:layout_height="match_parent"/>
 ```
-          
-Note: we've NOT included explicit ARCore capability checkers in order to make this example easy to follow.
 
 8. Run your new app om on your phone and scene the scene being created automatically for you
