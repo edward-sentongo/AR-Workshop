@@ -36,7 +36,8 @@ In this session we'll set up Android Studio and get it ready for our first AR ap
 ```
 
 6. Modify 'app build.gradle' to include: 
-   ```
+   
+```
 apply plugin: 'com.android.application'
 
 android {
@@ -52,11 +53,8 @@ android {
     buildTypes {
         release {
             ....
-            ....
         }
     }
-
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -66,12 +64,11 @@ android {
 dependencies {
     implementation 'com.google.ar:core:1.2.0'
     ...
-    ... 
     implementation "com.google.ar.sceneform.ux:sceneform-ux:1.0.0"
 }
 
 apply plugin: 'com.google.ar.sceneform.plugin'
-   ```
+```
       
 7. In your activity_main.xml, please add an ARFragment to make our lives easy.
 ```
