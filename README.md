@@ -47,18 +47,18 @@ a Node can contain 3d models or simple android view like textView<br/>
 
 
 **Import objects**
-1. Project:
-- app -> sampledata -> models|sfa|obj|mtl|png. All these are needed for rendering your asset
-- main -> assets/sfb
-2. Go to [Poly](https://poly.google.com/)
-- "cow", 
-- unzip obj, mtl and png to "sampledata -> models".
-!Performance over rendering. That's why Poly is ideal. Otherwise you'll get low quality anyway!
-    
+1. Create a sampledata folder in your app. Right click 'app' folder, New -> sampledata. You may create extra folders in there according to your models.
+2. Create assets folder inside the main folder of your app. Right click 'main' folder, New -> Folder -> Assets folder.
+3. Go to [Poly](https://poly.google.com/) and search for any object. In the sample code, I searched for "cow"
+4. Unzip your object into sampledata folder. You will use many objects so create a unique folder for each object you unzip.
+Your folder should contain atleast an .obj file. It could also contain .mtl and other files.
+5. Right click on you assets folder, New -> Sceneform Asset and import your object. The .sfb goes to the assets folder, .sfa goes to the sampledata folder.
+6. Go to the code in this repo to see how to include your new 3d object into your scene :) 
+
+Run it on your phone or simulator and scene the scene being created automatically for you.
 
 **Manipulate object characteristics:**
 - SFB - Materials[metallic, roughness, opacity, baseColorTint]
 - SFB - Models [scale]
 
-
-Run it on your phone or simulator and scene the scene being created automatically for you
+You can just download the code in this repo and play with it
