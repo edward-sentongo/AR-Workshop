@@ -72,11 +72,42 @@ apply plugin: 'com.google.ar.sceneform.plugin'
       
 7. In your activity_main.xml, please add an ARFragment to make our lives easy.
 ```
-      <fragment
-          android:id="@+id/sceneform_fragment"
-          android:name="com.google.ar.sceneform.ux.ArFragment"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"/>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <fragment
+        android:id="@+id/sceneform_fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+```
+You don't have to use LinearLayout. You may use FrameLayout, RelativeLayout, ConstraintLayout etc
+ 
+8. In your MainActivity.java, please add import the fragment you made in step 7.
+```
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.google.ar.sceneform.ux.ArFragment;
+
+public class MainActivity extends AppCompatActivity {
+
+    private ArFragment fragment;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        fragment = (ArFragment)
+                getSupportFragmentManager().findFragmentById(R.id.sceneform_fragment);
+    }
+}
 ```
 
-8. Run your new app om on your phone and scene the scene being created automatically for you
+9. Run your new app om on your phone and scene the scene being created automatically for you
