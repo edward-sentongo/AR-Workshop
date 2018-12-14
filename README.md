@@ -10,7 +10,7 @@
 
 3. Let's use the angular motion animator: QuaternionEvaluator()
 
-3. Play around the code and see what else you can make your object to do.
+3. ***Download the code in this repository and play with it. Replace the cow.sfb with any model you created. Ask questions please. 
 
 Run it on your phone or simulator and scene the scene being created automatically for you.
 
