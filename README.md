@@ -21,6 +21,7 @@ You can also load images for augumented images in your virtual world
 
 
 ### 2. 3D objects in our app.
+***Theory***
 **Scene**: things you're adding to the world, 3d models. This is what u define<br/><br/> 
 **View**: where your scene will be drawn<br/><br/>
 **Node** A Node represents a transformation within the scene graph's hierarchy. It can contain a renderable for the rendering engine to render 
