@@ -22,6 +22,7 @@ You can also load images for augumented images in your virtual world
 
 ### 2. 3D objects in our app.
 **Theory**<br/>
+
 **Scene**: things you're adding to the world, 3d models. This is what u define<br/> 
 **View**: where your scene will be drawn<br/>
 **Node** A Node represents a transformation within the scene graph's hierarchy. It can contain a renderable for the rendering engine to render.  
@@ -43,7 +44,7 @@ a Node can contain 3d models or simple android view like textView.
 - [Free3D](https://free3d.com/)
 - Use your talent
 
-**Let's code**<br/>
+**Practical: let's code**<br/>
 **Import objects**
 1. Create a sampledata folder in your app.  
 Right click 'app' folder, New -> sampledata.  
