@@ -47,8 +47,8 @@ a Node can contain 3d models or simple android view like textView<br/>
 
 
 **Import objects**
-1. Create a sampledata folder in your app. 
-Right click 'app' folder, New -> sampledata. 
+1. Create a sampledata folder in your app.  
+Right click 'app' folder, New -> sampledata.  
 You may create extra folders in there according to your models.
 2. Create assets folder inside the main folder of your app. 
 Right click 'main' folder, New -> Folder -> Assets folder.
