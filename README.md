@@ -2,7 +2,7 @@
 
 In this session we'll set up an Emulator for AR as well as add our first 3D model to our AR app.
 
-###1. AR Emulator
+### 1. AR Emulator
 1. Android Studio 3.1 +
 2. Android Oreo: API 27 (x86) (with Google PlayStore services)
 3. Verify Configuration -> Show Advanced Settings -> Camera Back == VirtualScene.
@@ -20,7 +20,7 @@ You can also load images for augumented images in your virtual world
 [Emulator instructions](https://developers.google.com/ar/develop/java/emulator)
 
 
-###2. 3D objects in our app.
+### 2. 3D objects in our app.
 **Scene**: things you're adding to the world, 3d models. This is what u define<br/><br/> 
 **View**: where your scene will be drawn<br/><br/>
 **Node** A Node represents a transformation within the scene graph's hierarchy. It can contain a renderable for the rendering engine to render 
