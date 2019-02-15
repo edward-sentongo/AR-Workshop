@@ -20,7 +20,11 @@ Check out the branches and build on them or just go to the final app and make a 
 
 [Part 4: Augumented Images](https://github.com/edward-sentongo/AR-Workshop-Augumented-Images) 
 
-[The complete app (Part 1 - 3)](https://github.com/edward-sentongo/AR-Workshop-123) 
+[The complete app (Part 1 - 3)](https://github.com/edward-sentongo/AR-Workshop-123).  
+
+Mail:  
+edward.sentongo@sogeti.com
+info@edwardsentongo.com
 
 
 
