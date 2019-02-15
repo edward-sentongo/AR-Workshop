@@ -32,6 +32,7 @@ a Node can contain 3d models or simple android view like textView.
 => What is a transformable node?
 
 **Anchor** Describes a fixed location and orientation in the real world. To stay at a fixed location in physical space, the numerical description of this position will update as ARCore's understanding of the space improves.  
+
 **Supported 3d model files**
 - obj.
 - fbx.
