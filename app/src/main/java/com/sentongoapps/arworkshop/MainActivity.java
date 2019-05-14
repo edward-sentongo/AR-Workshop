@@ -30,9 +30,11 @@ public class MainActivity extends AppCompatActivity implements Scene.OnUpdateLis
 
     private ArFragment fragment;
 
+    private String LOG_TAG = getClass().getSimpleName();
+
     @Override
     public void onUpdate(FrameTime frameTime) {
-        Log.e("LABA", "we're updating");
+        Log.i(LOG_TAG, "onUpdate called");
     }
 
     @Override
@@ -47,13 +49,6 @@ public class MainActivity extends AppCompatActivity implements Scene.OnUpdateLis
             @Override
             public void onTapPlane(HitResult hitResult, Plane plane, MotionEvent motionEvent) {
                 addObject(Uri.parse("Cow.sfb"));
-            }
-        });
-
-        fragment.getArSceneView().getScene().setOnUpdateListener(new Scene.OnUpdateListener() {
-            @Override
-            public void onUpdate(FrameTime frameTime) {
-
             }
         });
     }
