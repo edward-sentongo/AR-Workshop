@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity implements Scene.OnUpdateLis
 
     private ArFragment fragment;
 
-    private String LOG_TAG = getClass().getSimpleName();
+    private static final String TAG = "MainActivity";
 
     @Override
     public void onUpdate(FrameTime frameTime) {
-        Log.i(LOG_TAG, "onUpdate called");
+        Log.i(TAG, "onUpdate called");
     }
 
     @Override
