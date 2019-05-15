@@ -26,7 +26,7 @@ Mail:
 edward.sentongo@sogeti.com or info@edwardsentongo.com
 
 **Give Feedback for 040Coders:** 
-[Google Form @040Coders](https://forms.gle/xAHoxM2BZJpttxLv7)
+[Google Feedback Form @040Coders](https://forms.gle/xAHoxM2BZJpttxLv7)
 
 
 
