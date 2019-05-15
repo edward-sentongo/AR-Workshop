@@ -4,7 +4,7 @@ In this session we'll set up Android Studio and get it ready for our first AR ap
 
 1. Download the latest Android Studio from [here](https://developer.android.com/studio/)
 
-2. Android Studio plugin: Sceneform. This will help us work with 3D assets.
+2. Install Android Studio plugin called **Sceneform**. This will help us work with 3D assets.
 
 3. Make a new app, Android 8+ 
 
