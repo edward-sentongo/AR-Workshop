@@ -10,7 +10,7 @@ In this session we'll set up Android Studio and get it ready for our first AR ap
 
 4. Modify 'project build.gradle' to include:
 ```
- **classpath 'com.google.ar.sceneform:plugin:1.9.0'**
+ classpath 'com.google.ar.sceneform:plugin:1.9.0'
 ```
 5. Modify 'app build.gradle' to include: 
    
