@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Get center of fragment. This center is center_of_wherever_ur_pointing
     private android.graphics.Point getScreenCenter() {
-        View vw = findViewById(android.R.id.content);
-        return new android.graphics.Point(vw.getWidth()/2, vw.getHeight()/2);
+        View view = findViewById(android.R.id.content);
+        return new android.graphics.Point(view.getWidth()/2, view.getHeight()/2);
     }
 
     //1. Add Object to fragment
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         //Todo: you can later use the 'renderableFuture' for other fun stuff
     }
 
-    //3. Now add it to AR Fragment
+    //3. Now add it to AR Fragment's scene
     private void addNodeToScene(ArFragment fragment, Anchor anchor, Renderable renderable) {
         AnchorNode anchorNode = new AnchorNode(anchor);
         Node animalNode = new Node();
