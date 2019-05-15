@@ -32,7 +32,7 @@ In this session we'll set up Android Studio and get it ready for our first AR ap
 
 5. Modify 'project build.gradle' to include:
 ```
- classpath 'com.google.ar.sceneform:plugin:1.5.1'
+ classpath 'com.google.ar.sceneform:plugin:1.9.0'
 ```
 
 6. Modify 'app build.gradle' to include: 
@@ -62,9 +62,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.ar:core:1.2.0'
+    implementation 'com.google.ar:core:1.9.0'
     ...
-    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.0.0"
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.9.0"
 }
 
 apply plugin: 'com.google.ar.sceneform.plugin'
