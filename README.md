@@ -23,10 +23,9 @@ Check out the branches and build on them or just go to the final app and make a 
 [The complete app (Part 1 - 3)](https://github.com/edward-sentongo/AR-Workshop-123).  
 
 Mail:  
-edward.sentongo@sogeti.com
-info@edwardsentongo.com
+edward.sentongo@sogeti.com or info@edwardsentongo.com
 
-Give Feedback for 040Coders: 
+**Give Feedback for 040Coders:** 
 [Google Form @040Coders](https://forms.gle/xAHoxM2BZJpttxLv7)
 
 
