@@ -13,7 +13,7 @@ In this session we'll set up an Emulator for AR as well as add our first 3D mode
 
 **Controls:**
 - Mouse click on screan
-- Option/Alt + WASQED
+- Keyboard keys: Option/Alt + W,A,S,Q,E,D
 - Just experiment around :) We'll load our first app into an emulator.
 
 You can also load images for augumented images in your virtual world
