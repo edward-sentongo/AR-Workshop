@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                         ((Plane) trackable).isPoseInPolygon(hit.getHitPose())) {
                     placeObject(fragment, hit.createAnchor(), model);
                     break;
-
                 }
             }
         }
