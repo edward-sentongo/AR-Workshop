@@ -1,6 +1,6 @@
 # AR-Workshop:  Part 2
 
-In this session we'll set up an Emulator for AR as well as add our first 3D model to our AR app.
+In this session we'll set up an Emulator for AR as well as add our first 3D model/object to our AR app.
 
 ### 1. AR Emulator
 1. Android Studio 3.1 +
