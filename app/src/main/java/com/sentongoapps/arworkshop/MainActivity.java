@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements Scene.OnUpdateLis
 
     //Get center of fragment. This center is center_of_wherever_ur_pointing
     private android.graphics.Point getScreenCenter() {
-        View vw = findViewById(android.R.id.content);
-        return new android.graphics.Point(vw.getWidth()/2, vw.getHeight()/2);
+        View view = findViewById(android.R.id.content);
+        return new android.graphics.Point(view.getWidth()/2, view.getHeight()/2);
     }
 
     //1. Add Object to fragment
