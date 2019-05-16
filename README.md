@@ -63,8 +63,8 @@ a Node can contain 3d models or simple android view like textView.
   - The .sfa goes to the sampledata folder.
 6. Go to the code in this repo to see how to include your new 3d object into your scene :) 
 
-**Modify main class to handle your object binary** <br/>
-**Replace the 'cow.sfb' with any model you created.** <br/>
+**Modify main class to handle your object binary**<br/>
+**Replace the 'cow.sfb' with any model you created.**<br/>
 1. Add these lines in the onCreate method. To add object to the dragment sceneView:
 ```
         fragment.setOnTapArPlaneListener(new BaseArFragment.OnTapArPlaneListener() {
