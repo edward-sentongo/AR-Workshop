@@ -46,23 +46,93 @@ a Node can contain 3d models or simple android view like textView.
 - [Free3D](https://free3d.com/)
 - Use your talent
 
-**Practical: let's code**<br/>
-**Import objects**
+**Practical: let's code**<br/><br/>
+**Import (3D) objects**
 1. Create a sampledata folder in your app.  
-Right click 'app' folder, New -> sampledata.  
-You may create extra folders in there according to your models.
+  - Right click 'app' folder, New -> sampledata. 
+  - You may create extra folders in there according to your models.
 2. Create assets folder inside the main folder of your app.  
-Right click 'main' folder, New -> Folder -> Assets folder.
+  Right click 'main' folder, New -> Folder -> Assets folder.
 3. Go to [Poly](https://poly.google.com/) and search for any object.  
-In the sample code, I searched for "cow" which I ended up using
+  In the sample code, I searched for "cow" which I ended up using
 4. Unzip your object into sampledata folder.  
-You will use many objects so create a unique folder for each object you unzip.  
-Your folder should contain atleast an .obj file. It could also contain .mtl and other files.
+  - You will use many objects so create a unique folder for each object you unzip.  
+  - Your folder should contain atleast an .obj file. It could also contain .mtl and other files.
 5. Right click on you assets folder, New -> Sceneform Asset and import your object.  
-The .sfb goes to the assets folder.  
-The .sfa goes to the sampledata folder.
+  - The .sfb goes to the assets folder.  
+  - The .sfa goes to the sampledata folder.
 6. Go to the code in this repo to see how to include your new 3d object into your scene :) 
 
+**Modify main class to handle your object binary** 
+1. Add these lines in the onCreate method. To add object to the dragment sceneView:
+```
+        fragment.setOnTapArPlaneListener(new BaseArFragment.OnTapArPlaneListener() {
+            @Override
+            public void onTapPlane(HitResult hitResult, Plane plane, MotionEvent motionEvent) {
+                addObject(Uri.parse("Cow.sfb"));
+            }
+        });
+```
+2. Outside onCreate method, implement the addObject methods and getScreenCenter method:
+```
+    //Get center of fragment. This center is center_of_wherever_ur_pointing
+    private android.graphics.Point getScreenCenter() {
+        View view = findViewById(android.R.id.content);
+        return new android.graphics.Point(view.getWidth()/2, view.getHeight()/2);
+    }
+
+    //1. Add Object to fragment
+    private void addObject(Uri model) {
+        Frame frame = fragment.getArSceneView().getArFrame();
+        android.graphics.Point pt = getScreenCenter(); //See up ;)
+        List<HitResult> hits;
+        if (frame != null) {
+            hits = frame.hitTest(pt.x, pt.y);
+            for (HitResult hit : hits) {
+                Trackable trackable = hit.getTrackable();
+                if (trackable instanceof Plane &&
+                        ((Plane) trackable).isPoseInPolygon(hit.getHitPose())) {
+                    placeObject(fragment, hit.createAnchor(), model);
+                    break;
+                }
+            }
+        }
+    }
+```
+
+3. Outside the onCreate method, implement the 'placeObject' method:
+```
+    //2. Place object on fragment
+    private void placeObject(ArFragment fragment, Anchor anchor, Uri model) {
+        CompletableFuture<Void> renderableFuture =
+                ModelRenderable.builder()
+                        .setSource(fragment.getContext(), model)
+                        .build()
+                        .thenAccept(renderable -> addNodeToScene(fragment, anchor, renderable))
+                        .exceptionally((throwable -> {
+                            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                            builder.setMessage(throwable.getMessage())
+                                    .setTitle("Sogeti AR Error!");
+                            AlertDialog dialog = builder.create();
+                            dialog.show();
+                            return null;
+                        }));
+
+        //Todo: you can later use the 'renderableFuture' for other fun stuff
+    }
+```
+
+4. Outside the onCreate method, implement the 'addNodeToScene' method:
+```
+    //3. Now add it to AR Fragment's scene
+    private void addNodeToScene(ArFragment fragment, Anchor anchor, Renderable renderable) {
+        AnchorNode anchorNode = new AnchorNode(anchor);
+        Node animalNode = new Node();
+        animalNode.setRenderable(renderable);
+        animalNode.setParent(anchorNode);
+        fragment.getArSceneView().getScene().addChild(anchorNode);
+    }
+```
 Run it on your phone or simulator and scene the scene being created automatically for you.
 
 **Manipulate object characteristics:**
