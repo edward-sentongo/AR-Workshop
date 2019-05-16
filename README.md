@@ -1,6 +1,6 @@
 # AR-Workshop:  Part 3
 Let's add some motion and transformation to our app.  
-You previous had a node, we'd like to make it transformable in order to scale it and move it anywhere. -> <strong>Transformable node.</strong>
+You previous had a node, we'd like to make it transformable in order to scale it and move it anywhere. -> <strong>Transformable node.</strong> 
 **Replace the cow.sfb with any model you created.** 
 1. Make a subclass 'TransformableNode' and call it Animal. Overide any defaults.  
   - Vector 3: a 3d location.  
