@@ -18,9 +18,9 @@ Check out the branches and build on them or just go to the final app and make a 
 
 [Part 3: Motion & complete animal app](https://github.com/edward-sentongo/AR-Workshop/tree/play/part-3)
 
-[Part 4: Augmented Images](https://github.com/edward-sentongo/AR-Workshop-Augmented-Images) 
+[Part 4: The ideal complete app (Part 1 - 3)](https://github.com/edward-sentongo/AR-Workshop-123). 
 
-[The complete app (Part 1 - 3)](https://github.com/edward-sentongo/AR-Workshop-123).  
+[Part 5: Augmented Images](https://github.com/edward-sentongo/AR-Workshop-Augmented-Images) 
 
 Mail:  
 edward.sentongo@sogeti.com or info@edwardsentongo.com
